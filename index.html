@@ -9,16 +9,18 @@
     <title>Цифровые документы</title>
     <script>
         function fullScreen() {
-            var el = document.getElementById('msg'); // Получаем элемент
+            var el = document.getElementById(body); // Получаем элемент
             if (el.webkitRequestFullscreen) el.webkitRequestFullscreen(); // Chrome, Opera, Safari
             else if (el.mozRequestFullScreen) el.mozRequestFullScreen(); // Firefox
             else if (el.msRequestFullscreen) el.msRequestFullscreen(); // Internet Explorer, Edge
             else if (el.requestFullscreen) el.requestFullscreen(); // Стандарт
         }
+        var html = document.documentElement; fullScreen(html);
+
     </script>
 </head>
 
-<body id="msg">
+<body>
     <div class="menu">
         <div class="title_head">
             <div class="icon">
