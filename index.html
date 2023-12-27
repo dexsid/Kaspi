@@ -6,10 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/css.css">
     <link rel="stylesheet" href="style/normalize.css">
-    <title>Document</title>
+    <title>Цифровые документы</title>
+    <script>
+        function fullScreen() {
+            var el = document.getElementById('msg'); // Получаем элемент
+            if (el.webkitRequestFullscreen) el.webkitRequestFullscreen(); // Chrome, Opera, Safari
+            else if (el.mozRequestFullScreen) el.mozRequestFullScreen(); // Firefox
+            else if (el.msRequestFullscreen) el.msRequestFullscreen(); // Internet Explorer, Edge
+            else if (el.requestFullscreen) el.requestFullscreen(); // Стандарт
+        }
+    </script>
 </head>
 
-<body>
+<body id="msg">
     <div class="menu">
         <div class="title_head">
             <div class="icon">
@@ -20,55 +29,53 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="body">
-            <div class="title_body">
-                <p class="title_body_style">Мои документы</p>
-            </div>
-            <a href="#">
-                <div class="block">
-                    <div class="identify_block">
-                        <div class="identify_block_icon">
-                            <img src="/img/icons/logo1.png" alt="">
-                        </div>
-                        <div class="identify_block_title">
-                            <p class="identify_block_title_style">Удостоверение личности</p>
-                        </div>
-                    </div>
-                    <div class="icon">
-                        <img src="/img/icons/arrow_block.png" alt="">
-                    </div>
-                </div>
-            </a>
-            <div class="block">
-                <div class="identify_block">
-                    <div class="identify_block_icon">
-                        <img src="/img/icons/logo2.png" alt="">
-                    </div>
-                    <div class="identify_block_title">
-                        <p class="identify_block_title_style">Паспорт вакцинации</p>
-                    </div>
-                </div>
-                <div class="icon">
-                    <img src="/img/icons/arrow_block.png" alt="">
-                </div>
-            </div>
-            <div class="block">
-                <div class="identify_block">
-                    <div class="identify_block_icon">
-                        <img src="/img/icons/logo3.png" alt="">
-                    </div>
-                    <div class="identify_block_title">
-                        <p class="identify_block_title_style identify_block_title_style_third">Справки</p>
-                        <p class="identify_block_title_text">Пенсионные, социальные, из диспансеров</p>
-                    </div>
-                </div>
-                <div class="icon">
-                    <img src="/img/icons/arrow_block.png" alt="">
-                </div>
-            </div>
-
+    <div class="body">
+        <div class="title_body">
+            <p class="title_body_style">Мои документы</p>
         </div>
+        <a href="indentify.html">
+            <div class="block">
+                <div class="identify_block">
+                    <div class="identify_block_icon">
+                        <img src="/img/icons/logo1.png" alt="">
+                    </div>
+                    <div class="identify_block_title">
+                        <p class="identify_block_title_style">Удостоверение личности</p>
+                    </div>
+                </div>
+                <div class="icon">
+                    <img src="/img/icons/arrow_block.png" alt="">
+                </div>
+            </div>
+        </a>
+        <div class="block block_sec">
+            <div class="identify_block">
+                <div class="identify_block_icon">
+                    <img src="/img/icons/logo2.png" alt="">
+                </div>
+                <div class="identify_block_title">
+                    <p class="identify_block_title_style">Паспорт вакцинации</p>
+                </div>
+            </div>
+            <div class="icon">
+                <img src="/img/icons/arrow_block.png" alt="">
+            </div>
+        </div>
+        <div class="block">
+            <div class="identify_block">
+                <div class="identify_block_icon">
+                    <img src="/img/icons/logo3.png" alt="">
+                </div>
+                <div class="identify_block_title">
+                    <p class="identify_block_title_style identify_block_title_style_third">Справки</p>
+                    <p class="identify_block_title_text ">Пенсионные, социальные, из диспансеров</p>
+                </div>
+            </div>
+            <div class="icon">
+                <img src="/img/icons/arrow_block.png" alt="">
+            </div>
+        </div>
+
     </div>
 </body>
 
